@@ -1,16 +1,16 @@
 <?php
 
-namespace Beyondcode\FilterableCard\Tests;
+namespace Omneo\FilterableCard\Tests;
 
 
-use Beyondcode\FilterableCard\FilterablePartition;
+use Omneo\FilterableCard\FilterablePartition;
 use Illuminate\Http\Request;
 use Laravel\Nova\Metrics\Trend;
 use Laravel\Nova\Metrics\Value;
 use Laravel\Nova\Metrics\Partition;
 use Illuminate\Foundation\Auth\User;
-use Beyondcode\FilterableCard\FilterableValue;
-use Beyondcode\FilterableCard\FilterableTrend;
+use Omneo\FilterableCard\FilterableValue;
+use Omneo\FilterableCard\FilterableTrend;
 
 class FilterableTest extends TestCase
 {
