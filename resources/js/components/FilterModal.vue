@@ -6,7 +6,7 @@
     >
         <div class="bg-white rounded-lg shadow-lg overflow-hidden" style="width: 600px">
             <div>
-                <heading :level="2" class="pt-8 px-8">Filtersss "{{ title }}"</heading>
+                <heading :level="2" class="pt-8 px-8">Filter "{{ title }}"</heading>
 
                 <div class="px-8 py-6">
                     <table class="w-full table table-primary">

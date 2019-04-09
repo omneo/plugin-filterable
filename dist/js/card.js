@@ -11316,7 +11316,7 @@ var render = function() {
             "div",
             [
               _c("heading", { staticClass: "pt-8 px-8", attrs: { level: 2 } }, [
-                _vm._v('Filtersss "' + _vm._s(_vm.title) + '"')
+                _vm._v('Filter "' + _vm._s(_vm.title) + '"')
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "px-8 py-6" }, [
