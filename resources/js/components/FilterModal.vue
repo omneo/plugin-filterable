@@ -6,7 +6,7 @@
     >
         <div class="bg-white rounded-lg shadow-lg overflow-hidden" style="width: 600px">
             <div>
-                <heading :level="2" class="pt-8 px-8">Filterxxx "{{ title }}"</heading>
+                <heading :level="2" class="pt-8 px-8">Filter "{{ title }}"</heading>
 
                 <div class="px-8 py-6">
                     <table class="w-full table table-primary">
@@ -37,7 +37,9 @@
                                         @change="handleFilter(filter, $event)"
                                         :type="filter.definition.type"
                                         :checked="selectedFilters[filter.value] === 1"
-                                        :value="selectedFilters[filter.value]" />
+                                        :value="selectedFilters[filter.value]"/>
+                                <span>Here</span>
+                                <span v-if="filter.definition.message">{{filter.definition.message}}</span>
                                 <select
                                         v-if="filter.definition.type === 'select'"
                                         @change="handleFilter(filter, $event)"
@@ -47,8 +49,8 @@
                                             v-for="(option, value) in filter.definition.options"
                                             :value="value"
                                             :selected="value == selectedFilters[filter.value]"
-                                    >{{ option }}</option>
-                                    <span>xxx</span>
+                                    >{{ option }}
+                                    </option>
                                 </select>
                             </td>
                         </tr>
