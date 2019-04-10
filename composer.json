@@ -1,7 +1,6 @@
 {
-    "name": "omneo/plugin-filterable",
-    "description": "Filterable plugin customized for Omneo.",
-    "type": "library",
+    "name": "omneo/nova-filterable-cards",
+    "description": "Filterable metric cards for Laravel Nova.",
     "keywords": [
         "laravel",
         "nova"
@@ -9,7 +8,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.1.0",
-        "laravel/nova": "*",
+        "laravel/nova": "~1.0",
         "orchestra/testbench": "^3.7"
     },
     "autoload": {
