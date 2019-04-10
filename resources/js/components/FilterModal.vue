@@ -39,7 +39,6 @@
                                         :checked="selectedFilters[filter.value] === 1"
                                         :value="selectedFilters[filter.value]"/>
                                 <span>Here</span>
-                                <span v-if="filter.definition.message">{{filter.definition.message}}</span>
                                 <select
                                         v-if="filter.definition.type === 'select'"
                                         @change="handleFilter(filter, $event)"
