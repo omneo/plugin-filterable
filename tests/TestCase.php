@@ -1,11 +1,11 @@
 <?php
 
-namespace Beyondcode\FilterableCard\Tests;
+namespace Omneo\FilterableCard\Tests;
 
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Beyondcode\FilterableCard\CardServiceProvider;
+use Omneo\FilterableCard\CardServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

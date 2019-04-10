@@ -37,7 +37,7 @@
                                         @change="handleFilter(filter, $event)"
                                         :type="filter.definition.type"
                                         :checked="selectedFilters[filter.value] === 1"
-                                        :value="selectedFilters[filter.value]" />
+                                        :value="selectedFilters[filter.value]"/>
                                 <select
                                         v-if="filter.definition.type === 'select'"
                                         @change="handleFilter(filter, $event)"
@@ -47,7 +47,9 @@
                                             v-for="(option, value) in filter.definition.options"
                                             :value="value"
                                             :selected="value == selectedFilters[filter.value]"
-                                    >{{ option }}</option>
+                                    >{{ option }}
+                                    </option>
+                                    <span>{{filter.definition.message}}</span>
                                 </select>
                             </td>
                         </tr>

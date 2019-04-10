@@ -1,6 +1,6 @@
 <?php
 
-namespace Beyondcode\FilterableCard;
+namespace Omneo\FilterableCard;
 
 trait FilterableValue
 {

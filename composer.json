@@ -1,6 +1,7 @@
 {
-    "name": "beyondcode/nova-filterable-cards",
-    "description": "Filterable metric cards for Laravel Nova.",
+    "name": "omneo/plugin-filterable",
+    "description": "Filterable plugin customized for Omneo.",
+    "type": "library",
     "keywords": [
         "laravel",
         "nova"
@@ -13,18 +14,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Beyondcode\\FilterableCard\\": "src/"
+            "Omneo\\FilterableCard\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Beyondcode\\FilterableCard\\Tests\\": "tests/"
+            "Omneo\\FilterableCard\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Beyondcode\\FilterableCard\\CardServiceProvider"
+                "Omneo\\FilterableCard\\CardServiceProvider"
             ]
         }
     },
