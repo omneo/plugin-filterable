@@ -29,7 +29,6 @@
                             </td>
                         </tr>
                         <tr v-for="filter in filters">
-                            <td>{{ filter.label }}</td>
                             <td class="text-right">
                                 <input
                                         :class="inputClasses(filter.definition.type)"
