@@ -1,6 +1,6 @@
 <template>
     <modal
-            class="modal omneo-filter-modal"
+            class="modal"
             tabindex="-1"
             role="dialog"
     >
@@ -29,10 +29,6 @@
                             </td>
                         </tr>
                         <tr v-for="filter in filters">
-                            <td>
-                                {{ filter.label }}
-                                <small v-if="filter.definition.description">{{filter.definition.description}}</small>
-                            </td>
                             <td class="text-right">
                                 <input
                                         :class="inputClasses(filter.definition.type)"
